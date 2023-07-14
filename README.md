@@ -3,7 +3,7 @@ A Muisc Player Wesite
 
 This is a web based entertainment application developed for listening music
 
-### This web based restaurant application has been developed for the accomplishment of Future Ready Talent Internship program launched by Microsoft, Future Skills Prime, Quess, Github and EY.
+### This web based application has been developed for the accomplishment of Future Ready Talent Internship program launched by Microsoft, Future Skills Prime, Quess, Github and EY.
 
 
 **Project Link** -https://blue-cliff-0fc3a9900.3.azurestaticapps.net
