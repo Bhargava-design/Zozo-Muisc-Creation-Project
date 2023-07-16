@@ -990,10 +990,36 @@
 	</div>
 	<!-- //contact -->
 	<!-- // Signin -->
-		<div class="signin-card" id="Signin">
-		<h3 class="tittle_w3ls cen">Sign-in for our beautiful webiste for juse $20
+		<div class="floating-card" id="Signin">
+		<h3 class="signin-block">Sign-in for our beautiful webiste for juse $20
 		</h3>
-		<div class="inner_sec_info_agile-w3ls">
+		<div class=".content">
+			<style>
+			    	.content {
+     				 	flex: 1;
+      					padding: 20px;
+					margin: 0;
+      					padding: 0;
+      					display: flex;
+      					flex-direction: column;
+      					min-height: 100vh;
+    					}
+
+    			   	.floating-card {
+      					position: fixed;
+      					bottom: 50%;
+      					left: 50%;
+      					transform: translate(-50%, 50%);
+      					background-color: #f8f8f8;
+      					padding: 20px;
+      					border-radius: 5px;
+      					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    					}
+
+    				.signin-block {
+      					text-align: center;
+    					}
+  			</style>
 			<script>
    			 function validateSignIn() {
       				// Get the entered email and password
