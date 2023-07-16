@@ -89,7 +89,9 @@
 								<li>
 									<a href="#team" class="scroll">Artists</a>
 								</li>
-
+								 <li>
+									<a href="#Signin" class="scroll">Sign-in</a>
+								</li>
 							</ul>
 						</li>
 						<li>
@@ -987,6 +989,44 @@
 		</div>
 	</div>
 	<!-- //contact -->
+	<!-- // Signin -->
+		<div class="signin-card" id="Signin">
+		<h3 class="tittle_w3ls cen">Sign-in for our beautiful webiste for juse $20
+		</h3>
+		<div class="inner_sec_info_agile-w3ls">
+			<script>
+   			 function validateSignIn() {
+      				// Get the entered email and password
+      				var email = document.getElementById('email').value;
+     			        var password = document.getElementById('password').value;
+
+      				// Check if the credentials are correct
+     				if (email === 'guduribhargava@gmail.com' && password === 'Bhargava143@') {
+        				// Redirect to the desired page or perform any other action
+        				alert('Sign-in successful!');
+      				}
+				else {
+       				 // Show a warning message
+        				var warningMessage = document.getElementById('warning');
+        				warningMessage.style.display = 'block';
+      				    }
+   			 	}
+  			</script>
+			<form>
+    				<label for="email">Email:</label>
+    				<input type="email" id="email" name="email" required>
+   				<br>
+    				<label for="password">Password:</label>
+    				<input type="password" id="password" name="password" required>
+   				<br>
+    				<button type="button" onclick="validateSignIn()">Sign In</button>
+			<div class="register-card">
+    				<p>Don't have an account? <a href="register.html">Register here</a></p>
+ 			</div>
+			<p id="warning" style="display: none; color: red;">Incorrect email or password. Please try again.</p>
+  		     </form>
+		</div>
+	</div>
 	<!-- /footer -->
 	<section>
 	<div class="social_footer">
