@@ -9,7 +9,17 @@
         <!-- The playlist will be generated dynamically by JavaScript -->
     </ul>
 
-    <script>
+    <audio controls id="audio-player">
+        <!-- The audio player to play the selected MP3 file -->
+        Your browser does not support the audio element.
+    </audio>
+   <script>
+        // Function to play the selected MP3 file
+        function playMusic(fileUrl) {
+            const audioPlayer = document.getElementById('audio-player');
+            audioPlayer.src = fileUrl;
+            audioPlayer.play();
+        }
         // Fetch the content of azure_storage_content.md using Fetch API
         fetch('azure_storage_content.md')
             .then(response => response.text())
@@ -24,7 +34,9 @@
                 fileLines.forEach(file => {
                     if (file) { // Ensure the line is not empty
                         const listItem = document.createElement('li');
-                        listItem.textContent = file.substring(2); // Remove the '- ' prefix
+                        
+                        listItem.innerHTML = `<a href="javascript:void(0);" onclick="playMusic('${fileName}')">${fileName}</a>`;
+                        #listItem.textContent = file.substring(2); // Remove the '- ' prefix
                         playlist.appendChild(listItem);
                     }
                 });
