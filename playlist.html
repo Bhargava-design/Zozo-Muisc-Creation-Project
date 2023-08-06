@@ -185,7 +185,7 @@
 
     <div class="works" id="album">
 		<div class="container">
-			<h3 class="tittle_w3ls cen">Latest Albums</h3>
+			<h3 class="tittle_w3ls cen">Top Best Songs For You</h3>
 			<div class="inner_sec_info_agile-w3ls">
 				<div class="column add-bottom">
 					<div id="mainwrap">
@@ -254,7 +254,146 @@
             // Add your music playing logic here
             console.log("Playing music from:", url);
             // Implement the logic to play the music, e.g., use an audio player or HTML5 audio tag.
-        }
+        }	
     </script>
+		<!-- //footer -->
+		<div class="cpy-right-agile-w3ls">
+			<p> © 2023 Zozo Music. All rights reserved | Design by @ Bhargava_Veera_Bhadra_Guduru </p>
+		</div>
+		<iframe src='https://webchat.botframework.com/embed/Zozo-bot?s=BdajEQzhjDY.3ZHE9EknMDad4EPssFTaPOIRGNFc8cPoY2Owf_ltC6I'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+		</section>
+		<!-- js -->
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<!-- //js -->
+		<script type="text/javascript" src="js/all.js"></script>
+	
+		<!--search jQuery-->
+		<script src="js/search.js"></script>
+		<!--search jQuery-->
+		<!-- Scrolling Nav JavaScript -->
+		<script src="js/scroll_menu.js"></script>
+		<!-- //fixed-scroll-nav-js -->
+	
+		<script>
+			$(".hover").mouseleave(
+				function () {
+					$(this).removeClass("hover");
+				}
+			);
+		</script>
+		<!--//scripts-->
+		<!-- js for portfolio lightbox -->
+		<script src="js/jquery.chocolat.js "></script>
+		<link rel="stylesheet " href="css/chocolat.css " type="text/css " media="screen ">
+		<!--light-box-files -->
+		<script type="text/javascript ">
+			$(function () {
+				$('.portfolio-grids a').Chocolat();
+			});
+		</script>
+		<!-- /js for portfolio lightbox -->
+	
+		<!-- start-smooth-scrolling -->
+		<script src="js/move-top.js"></script>
+		<script src="js/easing.js"></script>
+		<script>
+			jQuery(document).ready(function ($) {
+				$(".scroll").click(function (event) {
+					event.preventDefault();
+	
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+		<!-- //end-smooth-scrolling -->
+		<!-- Time -->
+		<link href="css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
+	
+		<script type="text/javascript" src="js/wickedpicker.js"></script>
+		<script type="text/javascript">
+			$('.timepicker').wickedpicker({
+				twentyFour: false
+			});
+		</script>
+		<!-- //Time -->
+		<!-- Calendar -->
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			$(function () {
+				$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+			});
+		</script>
+		<!-- //Calendar -->
+	<!-- js -->
+	<script type="text/javascript" src="js/simplyCountdown.js"></script>
+	<link href="css/simplyCountdown.css" rel='stylesheet' type='text/css' />
+	<script>
+		var d = new Date();
+		simplyCountdown('simply-countdown', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 2,
+			day: 25
+		});
+		simplyCountdown('simply-countdown-custom', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 2,
+			day: 25
+		});
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 2,
+			day: 25
+		});
+	</script>
+	<!--js-->
+		<!-- player -->
+		<link rel="stylesheet" href="css/plyr.css" />
+		<script src="js/html5media.min.js"></script>
+		<script src="js/plyr.js"></script>
+		<script src="js/music-list.js"></script>
+		<!--// player -->
+		<!-- dropdown nav -->
+		<script>
+			$(document).ready(function () {
+				$(".dropdown").hover(
+					function () {
+						$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+						$(this).toggleClass('open');
+					},
+					function () {
+						$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+						$(this).toggleClass('open');
+					}
+				);
+			});
+		</script>
+		<!-- //dropdown nav -->
+		<!-- smooth-scrolling-of-move-up -->
+		<script>
+			$(document).ready(function () {
+				/*
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+				*/
+	
+				$().UItoTop({
+					easingType: 'easeOutQuart'
+				});
+	
+			});
+		</script>
+	
+		<!-- //smooth-scrolling-of-move-up -->
+		<script src="js/bootstrap.js"></script>
+		<a href="#" id="toTop" style="display: block;">
+			<span id="toTopHover" style="opacity: 1;"> </span>
+		</a>
 </body>
 </html>
